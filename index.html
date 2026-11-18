@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>林泓丞｜鏡頭後面的人 — 台南應用科技大學兼任講師</title>
+<meta name="description" content="林泓丞，台南應用科技大學兼任講師、導演、南應大運動傳播團隊帶隊老師。帶著學生把賽事直播出去，帶著空拍機把城市拍成故事。">
+<meta property="og:title" content="林泓丞｜鏡頭後面的人">
+<meta property="og:description" content="台南應用科技大學兼任講師、導演、南應大運動傳播團隊帶隊老師。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://event.bymyway.com/curated/lin-hongcheng/images/photo-hero.webp">
+<style>
+:root{
+  --bg:#131518; --bg2:#191d21; --card:#1f242a; --card2:#262c34;
+  --ink:#f6f0e3; --muted:#c9c1af; --dim:#9aa0a8;
+  --red:#e5322d; --red-dk:#b91f1a; --gold:#e6b44c; --gold-dk:#c9942f;
+  --line:#3a4048; --line-soft:#2a2f37;
+  --serif:"PingFang TC","Microsoft JhengHei","Noto Sans TC",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:22px;line-height:1.75;overflow-x:clip;-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--gold);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+h1,h2,h3{line-height:1.3;margin:0}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+section{padding:84px 0 20px;scroll-margin-top:84px}
+.nowrap{white-space:nowrap}
+
+/* ---------- viewfinder / motif helpers ---------- */
+.vf{position:relative}
+.vf::before,.vf::after{content:"";position:absolute;width:34px;height:34px;border:3px solid var(--gold);z-index:3;pointer-events:none}
+.vf::before{left:12px;top:12px;border-right:none;border-bottom:none}
+.vf::after{right:12px;bottom:12px;border-left:none;border-top:none}
+.vf .vf-c2,.vf .vf-c3{position:absolute;width:34px;height:34px;border:3px solid var(--gold);z-index:3;pointer-events:none}
+.vf .vf-c2{right:12px;top:12px;border-left:none;border-bottom:none}
+.vf .vf-c3{left:12px;bottom:12px;border-right:none;border-top:none}
+.rec{display:inline-flex;align-items:center;gap:10px;font-size:20px;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--red-dk);padding:6px 14px;border-radius:6px}
+.rec i{width:14px;height:14px;border-radius:50%;background:#fff;animation:blink 1.4s infinite}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:.15}}
+.eyebrow{font-size:20px;font-weight:700;letter-spacing:.22em;color:var(--gold);margin-bottom:14px}
+.eyebrow::before{content:"● ";color:var(--red)}
+.sec-head{margin-bottom:34px}
+.sec-head h2{font-size:42px;letter-spacing:.04em}
+.sec-head h2 .thin{color:var(--muted);font-weight:400}
+.sec-head p{color:var(--muted);font-size:22px;margin-top:10px;max-width:860px}
+.sec-rule{height:3px;background:linear-gradient(90deg,var(--red) 0 64px,var(--gold) 64px 128px,var(--line) 128px);margin-top:22px;border-radius:2px}
+figure{margin:0}
+.fig{background:var(--card);border:1px solid var(--line-soft);border-radius:14px;overflow:hidden}
+.fig img{width:100%}
+.figcap{padding:14px 18px;font-size:20px;line-height:1.6;color:var(--muted)}
+.figcap b{color:var(--ink);font-weight:700}
+.ph{position:relative;overflow:hidden}
+html.js .ph img{opacity:0;transition:opacity .6s ease}
+html.js .ph img.loaded{opacity:1}
+.tag{display:inline-block;font-size:20px;font-weight:700;padding:5px 14px;border-radius:999px;border:1.5px solid var(--gold);color:var(--gold);background:rgba(230,180,76,.08)}
+.tag.red{border-color:var(--red);color:#ff8a85;background:rgba(229,50,45,.1)}
+
+/* ---------- top nav ---------- */
+.topnav{position:sticky;top:0;z-index:60;background:rgba(19,21,24,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line-soft)}
+.topnav .wrap{display:flex;align-items:center;gap:26px;padding-top:0;padding-bottom:0}
+.brand{font-size:22px;font-weight:800;letter-spacing:.06em;color:var(--ink);text-decoration:none;white-space:nowrap;padding:16px 0}
+.brand span{color:var(--gold)}
+.navlinks{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks a{font-size:20px;color:var(--muted);text-decoration:none;padding:18px 14px;display:block}
+.navlinks a:hover{color:var(--ink)}
+
+/* ---------- ⑬ intro overlay ---------- */
+#intro{position:fixed;inset:0;z-index:200;background:#0b0c0e;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:22px}
+#intro .frame{position:relative;width:min(680px,86vw);aspect-ratio:16/9;border:1px solid #333}
+#intro .frame::before,#intro .frame::after{content:"";position:absolute;width:44px;height:44px;border:4px solid var(--gold)}
+#intro .frame::before{left:14px;top:14px;border-right:none;border-bottom:none}
+#intro .frame::after{right:14px;bottom:14px;border-left:none;border-top:none}
+#intro .nm{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+#intro .nm b{font-size:56px;letter-spacing:.3em;text-indent:.3em}
+#intro .nm span{font-size:22px;color:var(--gold);letter-spacing:.34em;text-indent:.34em}
+#intro .rec{position:absolute;left:20px;top:20px}
+#intro .focus{position:absolute;left:50%;top:50%;width:90px;height:90px;transform:translate(-50%,-50%);border:2px solid rgba(246,240,227,.75);border-radius:4px;animation:focuspulse 1.1s ease-in-out infinite}
+@keyframes focuspulse{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.9}50%{transform:translate(-50%,-50%) scale(.86);opacity:.5}}
+#intro .skip{position:absolute;right:22px;bottom:22px;background:transparent;border:1.5px solid var(--line);color:var(--muted);font-size:20px;padding:10px 20px;border-radius:999px;cursor:pointer;font-family:inherit}
+#intro.flash::after{content:"";position:absolute;inset:0;background:#fff;animation:flash .18s ease-out forwards}
+@keyframes flash{from{opacity:1}to{opacity:0}}
+#intro.leave{transition:transform .55s ease-in;transform:translateY(-100%)}
+
+/* ---------- hero ---------- */
+.hero{padding:56px 0 30px}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:76px;letter-spacing:.08em;line-height:1.15}
+.hero h1 .sub{display:block;font-size:34px;letter-spacing:.18em;color:var(--gold);margin-top:14px;font-weight:700}
+.hero .lede{color:var(--muted);font-size:23px;margin-top:22px;max-width:34em}
+.hero .lede b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btnrow{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px}
+.btn{display:inline-block;font-size:21px;font-weight:700;text-decoration:none;padding:14px 26px;border-radius:10px;border:2px solid var(--gold);color:#17130a;background:var(--gold)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--gold)}
+.hero-fig .rec{position:absolute;left:18px;top:18px;z-index:4}
+.hero-fig .sig{position:absolute;right:18px;top:18px;z-index:4;display:flex;align-items:flex-end;gap:4px;height:26px}
+.hero-fig .sig i{width:7px;background:var(--gold);border-radius:2px;display:block}
+.hero-fig .sig i:nth-child(1){height:9px}.hero-fig .sig i:nth-child(2){height:14px}.hero-fig .sig i:nth-child(3){height:20px}.hero-fig .sig i:nth-child(4){height:26px}
+.hero-note{margin-top:16px;font-size:20px;color:var(--dim);line-height:1.6}
+.hero-note b{color:var(--muted)}
+
+/* ---------- stats ③ ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat{background:var(--card);border:1px solid var(--line-soft);border-radius:16px;padding:28px 24px 24px;position:relative;overflow:hidden}
+.stat::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border:2px solid rgba(230,180,76,.25);border-radius:50%;box-shadow:0 0 0 14px rgba(230,180,76,.07),0 0 0 28px rgba(230,180,76,.04)}
+.stat .num{font-size:58px;font-weight:800;line-height:1.1;letter-spacing:.02em}
+.stat .num .unit{font-size:24px;color:var(--gold);margin-left:6px;font-weight:700}
+.stat .lbl{font-size:21px;font-weight:700;margin-top:10px}
+.stat .dsc{font-size:20px;color:var(--muted);line-height:1.6;margin-top:6px}
+
+/* ---------- education ---------- */
+.edu-photos{display:grid;grid-template-columns:1fr 1.35fr 1.35fr;gap:20px;margin-bottom:30px}
+.edu-photos .fig img{height:100%;object-fit:cover}
+.edu-photos .fig{aspect-ratio:4/3}
+.edu-photos .fig:first-child{aspect-ratio:3/4}
+.edu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.edu-col{background:var(--card);border:1px solid var(--line-soft);border-radius:16px;padding:26px 24px}
+.edu-col h3{font-size:24px;color:var(--gold);letter-spacing:.06em;padding-bottom:12px;border-bottom:2px solid var(--line);margin-bottom:16px}
+.edu-col ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.edu-col li{font-size:21px;line-height:1.6}
+.edu-col li .yr{display:block;font-size:20px;color:var(--dim);letter-spacing:.08em}
+.edu-col li b{font-weight:700}
+
+/* ---------- specialty ---------- */
+.spec-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:20px}
+.spec-big{position:relative}
+.spec-big .fig{height:100%}
+.spec-big img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.spec-body{padding:24px 26px 26px}
+.spec-body h3{font-size:28px}
+.spec-body p{color:var(--muted);font-size:21px;margin-top:10px;line-height:1.7}
+.spec-smalls{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.spec-small .fig{height:100%}
+.spec-small img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.spec-small .spec-body{padding:18px 20px 20px}
+.spec-small h3{font-size:24px}
+.spec-small p{font-size:20px;margin-top:8px}
+.courses{margin-top:22px;background:var(--bg2);border:1px dashed var(--line);border-radius:14px;padding:20px 26px;font-size:21px;color:var(--muted)}
+.courses b{color:var(--ink)}
+.courses .sep{color:var(--red);font-weight:800;padding:0 8px}
+
+/* ---------- ④ laser card ---------- */
+.laser{margin-top:34px;background:var(--card);border:1px solid var(--line-soft);border-radius:18px;overflow:hidden}
+.laser-head{padding:22px 28px 0;display:flex;flex-wrap:wrap;align-items:baseline;gap:14px}
+.laser-head h3{font-size:28px}
+.laser-head p{font-size:20px;color:var(--muted)}
+.laser-stage{position:relative;margin:20px 28px 10px;border-radius:12px;overflow:hidden}
+.laser-stage img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.hotspot{position:absolute;width:52px;height:52px;border-radius:50%;border:3px solid #fff;background:rgba(229,50,45,.92);color:#fff;font-size:24px;font-weight:800;cursor:pointer;transform:translate(-50%,-50%);z-index:5;font-family:inherit;padding:0;box-shadow:0 0 0 6px rgba(229,50,45,.28)}
+.hotspot[aria-expanded="true"]{background:var(--gold);color:#17130a;box-shadow:0 0 0 8px rgba(230,180,76,.3)}
+.laser-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:4}
+.laser-svg line{stroke:var(--gold);stroke-width:3;stroke-dasharray:8 6}
+.laser-card{position:absolute;z-index:6;max-width:330px;background:rgba(19,21,24,.92);backdrop-filter:blur(4px);border:1.5px solid var(--gold);border-radius:12px;padding:18px 20px;display:none}
+.laser-card.show{display:block}
+.laser-card h4{margin:0;font-size:23px;color:var(--gold)}
+.laser-card p{font-size:20px;color:var(--ink);line-height:1.6;margin-top:8px}
+.laser-cap{padding:6px 28px 22px;font-size:20px;color:var(--muted)}
+.laser-list{display:none}
+
+/* ---------- timeline ---------- */
+.timeline{position:relative;margin-top:8px;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:3px;background:linear-gradient(var(--red),var(--gold));border-radius:2px}
+.tl-item{position:relative;padding:0 0 44px}
+.tl-item::before{content:"";position:absolute;left:-34px;top:10px;width:19px;height:19px;border-radius:50%;background:var(--bg);border:4px solid var(--gold);z-index:2}
+.tl-item:last-child{padding-bottom:6px}
+.tl-year{font-size:20px;font-weight:800;letter-spacing:.16em;color:var(--red);display:block}
+.tl-year .sub{color:var(--dim);font-weight:400;letter-spacing:.04em;margin-left:8px}
+.tl-item h3{font-size:28px;margin-top:6px}
+.tl-item p{color:var(--muted);font-size:21px;margin-top:10px;max-width:900px;line-height:1.75}
+.tl-item p b{color:var(--ink)}
+.tl-media{display:grid;gap:20px;margin-top:20px;max-width:900px}
+.tl-media.two{grid-template-columns:1fr 1fr}
+.tl-media .fig img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.tl-media .fig.tall img{aspect-ratio:4/3}
+.quote-block{margin:26px 0 10px;background:linear-gradient(120deg,#241d12,#1c1a16);border:1px solid var(--gold-dk);border-left:8px solid var(--gold);border-radius:16px;padding:36px 38px;position:relative;overflow:hidden}
+.quote-block .q{font-size:34px;font-weight:800;line-height:1.5;letter-spacing:.02em}
+.quote-block .src{margin-top:16px;font-size:20px;color:var(--muted)}
+.quote-block .src b{color:var(--gold)}
+.quote-block.alt{border-color:var(--line);border-left-color:var(--red);background:var(--bg2)}
+.quote-block.alt .q{font-size:30px}
+
+/* ---------- media wall ---------- */
+.marquee{overflow:hidden;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:16px 0;margin-bottom:34px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.marquee-track{display:flex;gap:0;width:max-content;animation:scrollx 26s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{font-size:26px;font-weight:800;letter-spacing:.24em;color:var(--muted);padding-right:18px;white-space:nowrap}
+.marquee-track span i{color:var(--red);font-style:normal;padding-right:18px}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+.filters{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:26px}
+.filters .flbl{font-size:20px;color:var(--dim);margin-right:4px}
+.fbtn{font-family:inherit;font-size:20px;font-weight:700;padding:9px 20px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.fbtn .n{color:var(--dim);font-weight:400;margin-left:6px}
+.fbtn[aria-pressed="true"]{border-color:var(--gold);color:#17130a;background:var(--gold)}
+.fbtn[aria-pressed="true"] .n{color:#5a4318}
+.sharebtn{margin-left:auto;font-family:inherit;font-size:20px;font-weight:700;padding:9px 20px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.sharebtn:hover{border-color:var(--gold)}
+.media-feature{display:grid;grid-template-columns:1.15fr 1fr;gap:0;background:var(--card);border:1px solid var(--line-soft);border-radius:18px;overflow:hidden;margin-bottom:22px;text-decoration:none;color:inherit}
+.media-feature:hover{border-color:var(--gold)}
+.media-feature .mf-img img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+.media-feature .mf-body{padding:30px 30px 26px;display:flex;flex-direction:column;gap:12px}
+.mf-meta{font-size:20px;color:var(--dim)}
+.mf-meta b{color:var(--gold)}
+.media-feature h3{font-size:29px;line-height:1.4}
+.media-feature p{font-size:21px;color:var(--muted);line-height:1.7}
+.mf-link{margin-top:auto;font-size:20px;font-weight:700;color:var(--gold)}
+.media-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.media-card{background:var(--card);border:1px solid var(--line-soft);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit}
+.media-card:hover{border-color:var(--gold)}
+.media-card .mc-img img{width:100%;aspect-ratio:16/8.4;object-fit:cover}
+.media-card .mc-body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.media-card h3{font-size:25px;line-height:1.4}
+.media-card p{font-size:20px;color:var(--muted);line-height:1.65}
+.media-card .mf-link{font-size:20px}
+.mc-textcard .mc-img{background:linear-gradient(135deg,#26221a,#1d2126);aspect-ratio:16/8.4;display:flex;align-items:center;justify-content:center}
+.mc-textcard .mc-img span{font-size:23px;font-weight:800;letter-spacing:.14em;color:var(--gold);text-align:center;padding:0 30px;line-height:1.6}
+.empty-note{display:none;background:var(--bg2);border:1px dashed var(--line);border-radius:14px;padding:26px;font-size:21px;color:var(--muted);text-align:center}
+.empty-note.show{display:block}
+
+/* ---------- photo wall ---------- */
+.film-edge{height:26px;background:repeating-linear-gradient(90deg,transparent 0 26px,#0b0c0e 26px 52px);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);margin-bottom:30px;position:relative}
+.film-edge::before{content:"";position:absolute;inset:6px 0;background:repeating-linear-gradient(90deg,#3a4048 0 14px,transparent 14px 52px);opacity:.6}
+.masonry{columns:3;column-gap:20px}
+.mitem{break-inside:avoid;margin:0 0 20px;background:var(--card);border:1px solid var(--line-soft);border-radius:14px;overflow:hidden;cursor:pointer;text-align:left;padding:0;font-family:inherit;color:inherit;width:100%}
+.mitem:hover{border-color:var(--gold)}
+.mitem img{width:100%}
+.mitem figcaption{padding:14px 18px;font-size:20px;line-height:1.6;color:var(--muted)}
+.mitem figcaption b{color:var(--ink)}
+.wall-note{margin-top:26px;font-size:20px;color:var(--dim);line-height:1.7;border-left:4px solid var(--red);padding-left:16px}
+.wall-note b{color:var(--muted)}
+
+/* ---------- lightbox ---------- */
+#lightbox{position:fixed;inset:0;z-index:150;background:rgba(8,9,10,.94);display:none;align-items:center;justify-content:center;flex-direction:column;gap:16px;padding:24px}
+#lightbox.open{display:flex}
+#lightbox img{max-width:min(1000px,94vw);max-height:72vh;object-fit:contain;border-radius:10px}
+#lightbox .lb-cap{font-size:21px;color:var(--ink);max-width:860px;text-align:center;line-height:1.6}
+#lightbox .lb-count{font-size:20px;color:var(--dim)}
+.lb-btn{position:absolute;background:rgba(255,255,255,.08);border:1.5px solid var(--line);color:#fff;font-size:26px;width:58px;height:58px;border-radius:50%;cursor:pointer;font-family:inherit}
+.lb-btn:hover{border-color:var(--gold)}
+#lb-prev{left:18px;top:50%;transform:translateY(-50%)}
+#lb-next{right:18px;top:50%;transform:translateY(-50%)}
+#lb-close{right:18px;top:18px}
+
+/* ---------- contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:start}
+.contact-grid .fig img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.clist{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.clist li{background:var(--card);border:1px solid var(--line-soft);border-radius:14px;padding:20px 24px}
+.clist .k{font-size:20px;color:var(--dim);letter-spacing:.1em}
+.clist .v{font-size:22px;font-weight:700;margin-top:6px;word-break:break-all}
+.clist .v a{color:var(--ink);text-decoration:none}
+.clist .v a:hover{color:var(--gold);text-decoration:underline}
+.clist .note{font-size:20px;color:var(--muted);margin-top:6px;line-height:1.6}
+.contact-note{margin-top:20px;font-size:20px;color:var(--dim);line-height:1.7}
+
+/* ---------- footer ---------- */
+footer{margin-top:90px;border-top:1px solid var(--line-soft);background:#0e0f11;padding:44px 0 54px}
+.foot-links{display:flex;flex-wrap:wrap;gap:14px 30px}
+.foot-links a{font-size:21px;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:3px}
+.foot-links a:hover{color:var(--gold)}
+.foot-meta{margin-top:24px;font-size:20px;color:var(--dim);line-height:1.7}
+
+/* ---------- back to top ---------- */
+#totop{position:fixed;right:20px;bottom:20px;z-index:70;width:60px;height:60px;border-radius:50%;border:2px solid var(--gold);background:rgba(19,21,24,.92);color:var(--gold);font-size:28px;cursor:pointer;display:none;font-family:inherit}
+#totop.show{display:block}
+
+/* ---------- ⑪ reveal ---------- */
+html.js .rise{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+html.js .rise.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .stats{grid-template-columns:1fr 1fr}
+  .edu-photos{grid-template-columns:1fr 1fr}
+  .edu-grid{grid-template-columns:1fr 1fr}
+  .spec-grid{grid-template-columns:1fr}
+  .media-feature{grid-template-columns:1fr}
+  .media-grid{grid-template-columns:1fr}
+  .masonry{columns:2}
+  .contact-grid{grid-template-columns:1fr}
+  .laser-card{position:static;max-width:none;margin:14px 20px 6px}
+  .laser-svg{display:none}
+  .laser-stage{margin:20px 16px 6px}
+  .laser-cap{padding:6px 20px 20px}
+}
+@media (max-width:560px){
+  body{font-size:21px}
+  .wrap{padding:0 18px}
+  section{padding:64px 0 14px}
+  .hero h1{font-size:56px}
+  .hero h1 .sub{font-size:28px}
+  .sec-head h2{font-size:34px}
+  .stats{grid-template-columns:1fr}
+  .stat .num{font-size:52px}
+  .edu-photos{grid-template-columns:1fr}
+  .edu-grid{grid-template-columns:1fr}
+  .spec-smalls{grid-template-columns:1fr}
+  .masonry{columns:1}
+  .tl-media.two{grid-template-columns:1fr}
+  .quote-block{padding:26px 24px}
+  .quote-block .q{font-size:28px}
+  .quote-block.alt .q{font-size:26px}
+  .topnav .wrap{gap:14px}
+  .brand{font-size:20px}
+  .navlinks a{padding:16px 10px}
+  #intro .nm b{font-size:44px}
+  .lb-btn{width:50px;height:50px;font-size:22px}
+  #lb-prev{left:8px}#lb-next{right:8px}
+  .sharebtn{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .marquee-track{animation:none}
+  .rec i{animation:none}
+  html.js .rise{opacity:1;transform:none;transition:none}
+  #intro .focus{animation:none}
+}
+</style>
+</head>
+<body>
+<!-- ⑬ 取景器開場：僅 JS 啟用且未看過時顯示，見頁尾程式 -->
+<div id="intro" hidden role="dialog" aria-label="開場">
+  <div class="frame">
+    <span class="rec"><i></i>REC</span>
+    <span class="focus" aria-hidden="true"></span>
+    <div class="nm"><b>林泓丞</b><span>鏡頭後面的人</span></div>
+  </div>
+  <button class="skip" id="intro-skip" type="button">跳過開場</button>
+</div>
+
+<header class="topnav">
+  <div class="wrap">
+    <a class="brand" href="#top">林泓丞 <span>· 鏡頭後面的人</span></a>
+    <nav class="navlinks" aria-label="段落導覽">
+      <a href="#edu">學經歷</a>
+      <a href="#spec">專長</a>
+      <a href="#story">事蹟</a>
+      <a href="#media">媒體</a>
+      <a href="#photos">照片</a>
+      <a href="#contact">聯絡</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 1 開場主視覺 -->
+<section class="hero" aria-label="開場">
+  <div class="wrap hero-grid">
+    <div class="rise">
+      <p class="eyebrow">台南應用科技大學 · 兼任講師</p>
+      <h1>林泓丞<span class="sub">鏡頭後面的人</span></h1>
+      <p class="lede norphan">導演、兼任講師、運動傳播團隊帶隊老師。他不站在鏡頭前，他站在鏡頭後面——<b>帶著學生，把一場比賽直播出去；帶著空拍機，把一座城市拍成故事。</b></p>
+      <div class="chips">
+        <span class="tag">兼任講師</span>
+        <span class="tag">導演</span>
+        <span class="tag red">運動賽事直播</span>
+      </div>
+      <div class="btnrow">
+        <a class="btn" href="mailto:t90102@mail.tut.edu.tw">寫信給他</a>
+        <a class="btn ghost" href="https://www.facebook.com/p/%E5%8D%97%E6%87%89%E9%81%8B%E5%8B%95%E5%82%B3%E6%92%AD-100076512481526/" target="_blank" rel="noopener">南應運動傳播團隊粉專</a>
+      </div>
+      <p class="hero-note norphan"><b>授課系所：</b>企業管理系 · 國際企業系 · 連鎖加盟經營管理學士學位學程</p>
+    </div>
+    <div class="rise">
+      <figure class="fig vf hero-fig">
+        <span class="vf-c2" aria-hidden="true"></span><span class="vf-c3" aria-hidden="true"></span>
+        <span class="rec"><i></i>REC</span>
+        <span class="sig" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="ph" style="display:block;background:#635e6f"><img src="images/photo-hero.webp" width="700" height="525" alt="林泓丞在全中運空手道賽場操作三腳架上的專業攝影機" fetchpriority="high"></span>
+        <figcaption class="figcap"><b>111 學年度全中運空手道賽場</b>，他在攝影機旁工作。（圖／南應大連鎖加盟學程）</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 2 重點數字 -->
+<section aria-label="重點數字" style="padding-top:56px">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat rise">
+        <div class="num"><span data-count="500">500</span><span class="unit">公尺</span></div>
+        <div class="lbl">空拍高度</div>
+        <div class="dsc">宜蘭市政微電影，空拍機升空拍攝城市全景</div>
+      </div>
+      <div class="stat rise">
+        <div class="num"><span data-count="3">3</span><span class="unit">門</span></div>
+        <div class="lbl">教授課程</div>
+        <div class="dsc">活動攝影 · 網路行銷 · 創業管理</div>
+      </div>
+      <div class="stat rise">
+        <div class="num"><span data-count="4">4</span><span class="unit">項</span></div>
+        <div class="lbl">研究領域</div>
+        <div class="dsc">網路直播 · 專業攝影 · 網路行銷 · 文創產業管理</div>
+      </div>
+      <div class="stat rise">
+        <div class="num"><span data-count="2">2</span><span class="unit">項</span></div>
+        <div class="lbl">全國賽事直播</div>
+        <div class="dsc">112 年全中運、全大運空手道賽事直播及推廣行銷</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 學經歷 -->
+<section id="edu" aria-label="學經歷">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow">EDUCATION &amp; CAREER</p>
+      <h2>學經歷 <span class="thin">／教書，也帶隊上場</span></h2>
+      <div class="sec-rule"></div>
+    </div>
+    <div class="edu-photos">
+      <figure class="fig rise"><span class="ph" style="display:block;background:#908583"><img src="images/photo-selfie.webp" width="525" height="700" alt="林泓丞手持賽事直播工作證自拍" loading="lazy"></span><figcaption class="figcap"><b>工作證自拍</b>：林泓丞，賽事直播工作證，南應轉播。（圖／南應大連鎖加盟學程）</figcaption></figure>
+      <figure class="fig rise"><span class="ph" style="display:block;background:#685f6b"><img src="images/photo-crew.webp" width="700" height="525" alt="林泓丞與學生在攝影機旁確認線材" loading="lazy"></span><figcaption class="figcap"><b>他（右）與學生</b>在攝影機旁確認線材，背景為全中運空手道布條。（圖／南應大連鎖加盟學程）</figcaption></figure>
+      <figure class="fig rise"><img data-slot="IMG-005" src="images/IMG-005.webp" width="1000" height="750" alt="概念插畫：老師從背後示範攝影機操作，學生圍在旁邊學習" loading="lazy"><figcaption class="figcap"><b>概念插畫</b>：課堂示範——老師背影與學生、攝影機。（AI 概念圖，非實拍）</figcaption></figure>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-col rise">
+        <h3>現職</h3>
+        <ul>
+          <li><span class="yr">NOW</span><b>台南應用科技大學 兼任講師</b><br>企業管理系、國際企業系、連鎖加盟經營管理學士學位學程授課</li>
+          <li><span class="yr">TEAM</span><b>南應大運動傳播團隊 帶隊老師</b><br>帶領學生團隊負責賽事直播及推廣行銷</li>
+        </ul>
+      </div>
+      <div class="edu-col rise">
+        <h3>學歷</h3>
+        <ul>
+          <li><span class="yr">MASTER</span><b>醒吾科技大學</b><br>行銷與流通管理系 碩士</li>
+        </ul>
+      </div>
+      <div class="edu-col rise">
+        <h3>經歷</h3>
+        <ul>
+          <li><span class="yr">2016</span><b>宜蘭市政微電影 導演</b><br>《宜市宜居‧平安順興》</li>
+          <li><span class="yr">2020 ─</span><b>運動傳播團隊 創立帶隊</b><br>109 學年度與林政勳攜手成立</li>
+          <li><span class="yr">2025</span><b>運動傳播論壇 與談人</b><br>「國際 x 轉播」專題論壇</li>
+        </ul>
+      </div>
+      <div class="edu-col rise">
+        <h3>跨界身分</h3>
+        <ul>
+          <li><span class="yr">DIRECTOR</span><b>導演</b><br>市政微電影、空拍影像創作</li>
+          <li><span class="yr">BOOK</span><b>推薦序作者</b><br>《愛美是門好生意》推薦序 9</li>
+          <li><span class="yr">FORUM</span><b>論壇與談人</b><br>教育部體育署運動傳播論壇</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 專長 -->
+<section id="spec" aria-label="專長">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow">EXPERTISE</p>
+      <h2>專長 <span class="thin">／一台攝影機，四種專業</span></h2>
+      <div class="sec-rule"></div>
+    </div>
+    <div class="spec-grid">
+      <article class="spec-big rise">
+        <div class="fig">
+          <img data-slot="IMG-001" src="images/IMG-001.webp" width="1000" height="563" alt="概念插畫：導播室裡的切換台與多機監看螢幕" loading="lazy">
+          <div class="spec-body">
+            <span class="tag red">代表作</span>
+            <h3 style="margin-top:12px">運動賽事直播</h3>
+            <p class="norphan">帶領南應大運動傳播團隊，負責 112 年全中運與全大運空手道賽事的直播及推廣行銷。學生在真實賽場上學會多機作業——做中學，學中做。</p>
+          </div>
+        </div>
+      </article>
+      <div class="spec-smalls">
+        <article class="spec-small rise">
+          <div class="fig">
+            <img data-slot="IMG-003" src="images/IMG-003.webp" width="1000" height="750" alt="概念插畫：三腳架上的專業攝影機與鏡頭特寫" loading="lazy">
+            <div class="spec-body">
+              <h3>專業攝影</h3>
+              <p>活動攝影課程；空拍機升至 500 公尺，拍下城市全景。</p>
+            </div>
+          </div>
+        </article>
+        <article class="spec-small rise">
+          <div class="fig">
+            <img data-slot="IMG-004" src="images/IMG-004.webp" width="1000" height="562" alt="概念插畫：夜色中山頂的訊號塔與光流" loading="lazy">
+            <div class="spec-body">
+              <h3>網路直播</h3>
+              <p>研究領域；讓賽事訊號從場館，即時送到每一支手機。</p>
+            </div>
+          </div>
+        </article>
+        <article class="spec-small rise">
+          <div class="fig">
+            <img data-slot="IMG-007" src="images/IMG-007.webp" width="1000" height="562" alt="概念插畫：夜晚的創業市集攤位與燈籠" loading="lazy">
+            <div class="spec-body">
+              <h3>網路行銷</h3>
+              <p>網路行銷課程；賽事推廣行銷，把比賽推出去、把觀眾帶進來。</p>
+            </div>
+          </div>
+        </article>
+        <article class="spec-small rise">
+          <div class="fig">
+            <img data-slot="IMG-008" src="images/IMG-008.webp" width="1000" height="750" alt="概念插畫：文創手作工作台上的木雕與工具" loading="lazy">
+            <div class="spec-body">
+              <h3>文創產業管理</h3>
+              <p>研究領域；手作與產業的跨界視角，文化的生意經。</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="courses rise"><b>教授課程</b><span class="sep">／</span>活動攝影<span class="sep">·</span>網路行銷<span class="sep">·</span>創業管理　　<b>研究領域</b><span class="sep">／</span>網路直播<span class="sep">·</span>專業攝影<span class="sep">·</span>網路行銷<span class="sep">·</span>文創產業管理</div>
+
+    <!-- ④ 亮點雷射卡 -->
+    <div class="laser rise" id="laser">
+      <div class="laser-head">
+        <h3>導播台第一線</h3>
+        <p>點照片上的紅點，看直播現場的四個關鍵位置</p>
+      </div>
+      <div class="laser-stage" id="laser-stage">
+        <img src="images/photo-switcher.webp" width="1000" height="633" alt="賽場導播工作照：學生在導播台前操作，面前有多機監看螢幕與直播控台" loading="lazy">
+        <svg class="laser-svg" id="laser-svg" aria-hidden="true" preserveAspectRatio="none"></svg>
+        <button class="hotspot" type="button" style="left:32%;top:42%" data-title="多機監看螢幕" data-text="六個機位畫面一次看清：場上、場邊、特寫，導播隨時決定下一個鏡頭要切哪一路。" aria-expanded="false" aria-label="亮點一：多機監看螢幕">1</button>
+        <button class="hotspot" type="button" style="left:29%;top:74%" data-title="導播切換台" data-text="學生手上的切換台與控制器，直播的節奏從這裡出去——畫面切換、字卡、重播，一氣呵成。" aria-expanded="false" aria-label="亮點二：導播切換台">2</button>
+        <button class="hotspot" type="button" style="left:76%;top:52%" data-title="直播控台" data-text="串流軟體與音量表：訊號強度、音量大小、串流狀態，全部在這個螢幕上一目了然。" aria-expanded="false" aria-label="亮點三：直播控台">3</button>
+        <button class="hotspot" type="button" style="left:90%;top:88%" data-title="監聽耳機" data-text="耳機裡是現場的聲音，也是導播的指令。戴上耳機，整個團隊就接在同一條線上。" aria-expanded="false" aria-label="亮點四：監聽耳機">4</button>
+        <div class="laser-card" id="laser-card" role="status">
+          <h4 id="laser-card-title"></h4>
+          <p id="laser-card-text"></p>
+        </div>
+      </div>
+      <p class="laser-cap">2023 年賽場導播工作照，團隊學生操作導播台。（圖／南應大提供，中華日報）照片中的操作者為團隊學生。</p>
+      <noscript><ul class="laser-list" style="display:block;padding:0 28px 22px;font-size:20px;color:var(--muted);line-height:1.7"><li>多機監看螢幕：六個機位畫面一次看清。</li><li>導播切換台：直播的節奏從這裡出去。</li><li>直播控台：串流軟體與音量表。</li><li>監聽耳機：現場的聲音與導播的指令。</li></ul></noscript>
+    </div>
+  </div>
+</section>
+
+<!-- 5 生活事蹟時間軸＋金句 -->
+<section id="story" aria-label="事蹟">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow">STORY</p>
+      <h2>事蹟 <span class="thin">／從宜蘭河，到全國賽場</span></h2>
+      <div class="sec-rule"></div>
+    </div>
+    <div class="timeline">
+      <article class="tl-item rise">
+        <span class="tl-year">2016<span class="sub">宜蘭</span></span>
+        <h3>執導宜蘭市政微電影《宜市宜居‧平安順興》</h3>
+        <p class="norphan">宜蘭市公所籌畫半年的市政微電影，由他擔任導演。以<b>宜蘭河為主軸、大量空拍</b>，概念是「水環繞宜蘭市」；空拍機升至 <b>500 公尺</b>拍攝城市全景。拍攝少用腳架穩定器，改以手持呈現漫遊舊城的感覺。影片參加內政部城市之美微電影比賽與 2016 台灣之美國際攝影大賽，並推出英文版、日文版。</p>
+        <div class="tl-media two">
+          <figure class="fig"><span class="ph" style="display:block;background:#99a590"><img src="images/photo-yilan.webp" width="656" height="437" alt="宜蘭市政光碟發表會，眾人展示空拍全景大圖" loading="lazy"></span><figcaption class="figcap">2016 年市政光碟發表會，展示空拍全景。（李忠一攝，中國時報）</figcaption></figure>
+          <figure class="fig"><img data-slot="IMG-002" src="images/IMG-002.webp" width="1000" height="562" alt="概念插畫：空拍機俯瞰河川環繞的城鎮與稻田" loading="lazy"><figcaption class="figcap"><b>概念插畫</b>：空拍機俯瞰河川城市——「水環繞宜蘭市」。（AI 概念圖，非實拍）</figcaption></figure>
+        </div>
+      </article>
+      <article class="tl-item rise">
+        <span class="tl-year">2020<span class="sub">109 學年度</span></span>
+        <h3>南應大運動傳播團隊成立</h3>
+        <p class="norphan">教育部體育署自 2020 年起推動「大專院校培育運動傳播人才培育計畫」。運休系林政勳發起，與國企系兼任老師林泓丞攜手，於 109 學年度成立「南應大運動傳播團隊」，讓學生在真實賽事裡學會轉播。</p>
+        <div class="tl-media">
+          <figure class="fig"><img data-slot="IMG-006" src="images/IMG-006.webp" width="1000" height="562" alt="概念插畫：空無一人的比賽場館，藍紅地墊與場邊攝影機" loading="lazy"><figcaption class="figcap"><b>概念插畫</b>：開賽前的空場——藍紅地墊、場邊攝影機、等待訊號接通。（AI 概念圖，非實拍）</figcaption></figure>
+        </div>
+      </article>
+      <article class="tl-item rise">
+        <span class="tl-year">2022<span class="sub">7 月</span></span>
+        <h3>帶隊轉播 111 學年度全中運空手道比賽</h3>
+        <p class="norphan">林泓丞老師帶領本校學生團隊，轉播中華民國 111 年全國中等學校運動會空手道比賽。學生在場邊扛起攝影機、顧好每一路訊號，課堂上學的，全部在賽場上驗收。</p>
+        <div class="tl-media">
+          <figure class="fig tall"><span class="ph" style="display:block;background:#685f6b"><img src="images/photo-crew.webp" width="700" height="525" alt="林泓丞與學生在全中運攝影機旁工作" loading="lazy"></span><figcaption class="figcap">全中運現場，他（右）與學生在攝影機旁工作。（圖／南應大連鎖加盟學程）</figcaption></figure>
+        </div>
+      </article>
+      <article class="tl-item rise">
+        <span class="tl-year">2022<span class="sub">7 月</span></span>
+        <h3>為《愛美是門好生意》撰寫推薦序</h3>
+        <p class="norphan">王瑞揚、林沂蓁著《愛美是門好生意：獻給小資女的百萬創業寶典》（渠成文化）收錄 25 篇推薦序，其中「推薦序 9」由林泓丞以「導演／台南應用科技大學教師」身分撰寫。</p>
+      </article>
+      <article class="tl-item rise">
+        <span class="tl-year">2023<span class="sub">112 年</span></span>
+        <h3>全中運、全大運空手道直播及推廣行銷</h3>
+        <p class="norphan">112 年全國中等學校運動會與全國大專校院運動會的空手道賽事，由南應大運動傳播團隊負責直播及推廣行銷。團隊創立第三年，已轉為社團經營，期許學生將所學技術回饋校園與社會。</p>
+        <div class="tl-media">
+          <figure class="fig"><span class="ph" style="display:block;background:#75686e"><img src="images/photo-switcher.webp" width="1000" height="633" alt="賽場導播工作照：學生操作導播台與監看螢幕" loading="lazy"></span><figcaption class="figcap">賽場導播工作照，團隊學生操作導播台。（圖／南應大提供，中華日報）</figcaption></figure>
+        </div>
+      </article>
+      <article class="tl-item rise">
+        <span class="tl-year">2025<span class="sub">6 月 21 日</span></span>
+        <h3>運動傳播論壇與談人</h3>
+        <p class="norphan">113 學年度大專校院培育運動傳播人才計畫「運動傳播論壇：培育 x 產學 x 科技」，專題論壇（四）「國際 x 轉播：國際運動傳播的趨勢」，在正修科技大學學生活動中心舉行，他擔任與談人，與學界分享第一線的轉播經驗。</p>
+      </article>
+    </div>
+
+    <div class="quote-block rise">
+      <p class="q norphan">「原來升空後，宜蘭市那麼漂亮！」</p>
+      <p class="src">—— 林泓丞談空拍宜蘭市的感受，<b>中國時報 2016 年 3 月 22 日報導</b></p>
+    </div>
+    <div class="quote-block alt rise">
+      <p class="q norphan">「做中學，學中做」</p>
+      <p class="src">—— 南應大運動傳播團隊的技職教育理念，<b>中華日報 2023 年 8 月 1 日報導</b>引述</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 媒體牆（公益足跡區省略：公開管道查無獨立公益事蹟） -->
+<section id="media" aria-label="媒體報導">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow">MEDIA</p>
+      <h2>媒體牆 <span class="thin">／被報導，也被引用</span></h2>
+      <div class="sec-rule"></div>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>中華日報<i>●</i>中國時報<i>●</i>中央社<i>●</i>博客來<i>●</i></span>
+      <span>中華日報<i>●</i>中國時報<i>●</i>中央社<i>●</i>博客來<i>●</i></span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="filters" data-filter-group="media">
+      <span class="flbl">篩選：</span>
+      <!-- 篩選按鈕由程式依 data-tag 計數產生 -->
+      <button class="sharebtn" type="button" data-share="media">複製目前篩選連結</button>
+    </div>
+    <a class="media-feature rise" href="https://www.cdns.com.tw/articles/857161" target="_blank" rel="noopener" data-tag="報導">
+      <span class="mf-img ph" style="display:block;background:#75686e"><img src="images/photo-switcher.webp" width="1000" height="633" alt="中華日報報導配圖：賽場導播工作照" loading="lazy"></span>
+      <span class="mf-body">
+        <span class="mf-meta"><b>中華日報</b> · 2023-08-01 · 記者 汪惠松</span>
+        <span style="font-size:29px;font-weight:800;line-height:1.4">南應大運動傳播團隊 包辦直播行銷</span>
+        <span style="font-size:21px;color:var(--muted);line-height:1.7">體育署推動運動傳播人才培育計畫，運休系林政勳與國企系兼任老師林泓丞攜手，109 學年度成立團隊；112 年全中運與全大運空手道賽事，由團隊負責直播及推廣行銷。</span>
+        <span class="mf-link">閱讀原文 →</span>
+      </span>
+    </a>
+    <div class="media-grid" id="media-grid">
+      <a class="media-card rise" href="https://www.chinatimes.com/newspapers/20160322000609-260107" target="_blank" rel="noopener" data-tag="報導">
+        <span class="mc-img ph" style="display:block;background:#99a590"><img src="images/photo-yilan.webp" width="656" height="437" alt="中國時報報導配圖：市政光碟發表會展示空拍全景" loading="lazy"></span>
+        <span class="mc-body">
+          <span class="mf-meta"><b>中國時報</b> · 2016-03-22</span>
+          <span style="font-size:25px;font-weight:800;line-height:1.4">市政光碟發表 空拍宜蘭市原來那麼水</span>
+          <span style="font-size:20px;color:var(--muted);line-height:1.65">市政微電影發表，空拍機升至 500 公尺拍下全景；導演林泓丞談空拍成果。</span>
+          <span class="mf-link">閱讀原文 →</span>
+        </span>
+      </a>
+      <a class="media-card rise" href="https://www.chinatimes.com/realtimenews/20160417001320-260503" target="_blank" rel="noopener" data-tag="報導">
+        <span class="mc-img ph" style="display:block;background:#7e8785"><img src="images/media-0417.webp" width="656" height="437" alt="中央社報導配圖：發表會展示空拍全景大圖" loading="lazy"></span>
+        <span class="mc-body">
+          <span class="mf-meta"><b>中央社</b> · 2016-04-17 · 記者 沈如峰（刊於中國時報）</span>
+          <span style="font-size:25px;font-weight:800;line-height:1.4">宜蘭市政光碟 空拍蘭城原來那麼美</span>
+          <span style="font-size:20px;color:var(--muted);line-height:1.65">以宜蘭河為主軸、大量空拍，介紹昭應宮、碧霞宮、城隍廟、磚窯廠、設治紀念館等在地景點。</span>
+          <span class="mf-link">閱讀原文 →</span>
+        </span>
+      </a>
+      <a class="media-card rise" href="https://www.chinatimes.com/realtimenews/20160720005300-260508" target="_blank" rel="noopener" data-tag="報導">
+        <span class="mc-img ph" style="display:block;background:#808778"><img src="images/media-0720.webp" width="656" height="334" alt="中國時報報導配圖：宜蘭河空拍畫面" loading="lazy"></span>
+        <span class="mc-body">
+          <span class="mf-meta"><b>中國時報</b> · 2016-07-20</span>
+          <span style="font-size:25px;font-weight:800;line-height:1.4">市長邀鄉親投票 為宜蘭加油</span>
+          <span style="font-size:20px;color:var(--muted);line-height:1.65">《宜市宜居‧平安順興》參加內政部城市之美微電影比賽，市長邀請鄉親上網投票支持。</span>
+          <span class="mf-link">閱讀原文 →</span>
+        </span>
+      </a>
+      <a class="media-card mc-textcard rise" href="https://www.books.com.tw/products/0010929852?loc=P_0035_010" target="_blank" rel="noopener" data-tag="書籍">
+        <span class="mc-img"><span>《愛美是門好生意》<br>推薦序 9</span></span>
+        <span class="mc-body">
+          <span class="mf-meta"><b>博客來</b> · 2022-07-14 · 渠成文化</span>
+          <span style="font-size:25px;font-weight:800;line-height:1.4">《愛美是門好生意》推薦序作者</span>
+          <span style="font-size:20px;color:var(--muted);line-height:1.65">本書收錄 25 篇推薦序，林泓丞撰寫其中「推薦序 9」，署名「導演／台南應用科技大學教師」。他是推薦序作者之一，非本書作者。</span>
+          <span class="mf-link">查看書目 →</span>
+        </span>
+      </a>
+      <a class="media-card mc-textcard rise" href="https://tipfile.takming.edu.tw/PostFolder/F11322385.pdf" target="_blank" rel="noopener" data-tag="論壇">
+        <span class="mc-img"><span>運動傳播論壇<br>培育 x 產學 x 科技</span></span>
+        <span class="mc-body">
+          <span class="mf-meta"><b>報名簡章</b> · 2025-06-21 · 正修科技大學</span>
+          <span style="font-size:25px;font-weight:800;line-height:1.4">運動傳播論壇與談人</span>
+          <span style="font-size:20px;color:var(--muted);line-height:1.65">專題論壇（四）「國際 x 轉播：國際運動傳播的趨勢」與談人，與學界分享第一線轉播經驗。</span>
+          <span class="mf-link">查看簡章（PDF）→</span>
+        </span>
+      </a>
+    </div>
+    <p class="empty-note" id="media-empty">這個篩選下沒有內容，請試試其他分類。</p>
+  </div>
+</section>
+
+<!-- 8 照片牆 -->
+<section id="photos" aria-label="照片牆">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow">PHOTOS</p>
+      <h2>照片牆 <span class="thin">／賽場、課堂，與空拍的城市</span></h2>
+      <div class="sec-rule"></div>
+    </div>
+  </div>
+  <div class="film-edge" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="filters" data-filter-group="photo">
+      <span class="flbl">篩選：</span>
+      <button class="sharebtn" type="button" data-share="photo">複製目前篩選連結</button>
+    </div>
+    <div class="masonry" id="masonry">
+      <button class="mitem rise" type="button" data-tag="帶隊轉播" data-full="images/photo-hero.webp" data-cap="111 學年度全中運空手道賽場，他在攝影機旁工作。（圖／南應大連鎖加盟學程）">
+        <span class="ph" style="display:block;background:#635e6f"><img src="images/photo-hero.webp" width="700" height="525" alt="林泓丞在全中運空手道賽場操作攝影機" loading="lazy"></span>
+        <span style="display:block;padding:14px 18px;font-size:20px;line-height:1.6;color:var(--muted)"><b style="color:var(--ink)">賽場上的他</b>：111 學年度全中運空手道賽場，他在攝影機旁工作。</span>
+      </button>
+      <button class="mitem rise" type="button" data-tag="帶隊轉播" data-full="images/photo-selfie.webp" data-cap="工作證自拍：林泓丞，賽事直播工作證，南應轉播。（圖／南應大連鎖加盟學程）">
+        <span class="ph" style="display:block;background:#908583"><img src="images/photo-selfie.webp" width="525" height="700" alt="林泓丞手持賽事直播工作證自拍" loading="lazy"></span>
+        <span style="display:block;padding:14px 18px;font-size:20px;line-height:1.6;color:var(--muted)"><b style="color:var(--ink)">工作證自拍</b>：證上寫著「林泓丞」「賽事直播工作證」「南應轉播」。</span>
+      </button>
+      <button class="mitem rise" type="button" data-tag="帶隊轉播" data-full="images/photo-crew.webp" data-cap="全中運現場，他（右）與學生在攝影機旁確認線材。（圖／南應大連鎖加盟學程）">
+        <span class="ph" style="display:block;background:#685f6b"><img src="images/photo-crew.webp" width="700" height="525" alt="林泓丞與學生在攝影機旁確認線材" loading="lazy"></span>
+        <span style="display:block;padding:14px 18px;font-size:20px;line-height:1.6;color:var(--muted)"><b style="color:var(--ink)">帶著學生上場</b>：他（右）與學生在攝影機旁確認線材。</span>
+      </button>
+      <button class="mitem rise" type="button" data-tag="團隊現場" data-full="images/photo-switcher.webp" data-cap="2023 年賽場導播工作照，團隊學生操作導播台。（圖／南應大提供，中華日報）">
+        <span class="ph" style="display:block;background:#75686e"><img src="images/photo-switcher.webp" width="1000" height="633" alt="賽場導播工作照：學生操作導播台" loading="lazy"></span>
+        <span style="display:block;padding:14px 18px;font-size:20px;line-height:1.6;color:var(--muted)"><b style="color:var(--ink)">導播台第一線</b>：團隊學生操作導播台與監看螢幕。</span>
+      </button>
+      <button class="mitem rise" type="button" data-tag="導演作品" data-full="images/photo-yilan.webp" data-cap="2016 年宜蘭市政光碟發表會，展示空拍全景。（李忠一攝，中國時報）">
+        <span class="ph" style="display:block;background:#99a590"><img src="images/photo-yilan.webp" width="656" height="437" alt="宜蘭市政光碟發表會展示空拍全景" loading="lazy"></span>
+        <span style="display:block;padding:14px 18px;font-size:20px;line-height:1.6;color:var(--muted)"><b style="color:var(--ink)">市政光碟發表會</b>：2016 年，展示空拍全景大圖。</span>
+      </button>
+      <button class="mitem rise" type="button" data-tag="導演作品" data-full="images/photo-still-a.webp" data-cap="《宜市宜居‧平安順興》空拍畫面：宜蘭河。（影片翻攝，中國時報）">
+        <span class="ph" style="display:block;background:#687261"><img src="images/photo-still-a.webp" width="656" height="335" alt="宜蘭市政微電影空拍畫面：宜蘭河" loading="lazy"></span>
+        <span style="display:block;padding:14px 18px;font-size:20px;line-height:1.6;color:var(--muted)"><b style="color:var(--ink)">影片空拍畫面</b>：《宜市宜居‧平安順興》宜蘭河。（影片翻攝）</span>
+      </button>
+      <button class="mitem rise" type="button" data-tag="導演作品" data-full="images/media-0720.webp" data-cap="《宜市宜居‧平安順興》空拍畫面：宜蘭河與橋。（影片翻攝，中國時報）">
+        <span class="ph" style="display:block;background:#808778"><img src="images/media-0720.webp" width="656" height="334" alt="宜蘭市政微電影空拍畫面：宜蘭河與橋" loading="lazy"></span>
+        <span style="display:block;padding:14px 18px;font-size:20px;line-height:1.6;color:var(--muted)"><b style="color:var(--ink)">影片空拍畫面</b>：《宜市宜居‧平安順興》宜蘭河與橋。（影片翻攝）</span>
+      </button>
+    </div>
+    <p class="empty-note" id="photo-empty">這個篩選下沒有照片，請試試其他分類。</p>
+    <p class="wall-note rise"><b>關於照片數量：</b>公開管道僅取得 7 張可驗證身分的照片——學校消息頁 3 張、報導配圖 2 張、影片空拍畫面 2 張。團隊粉專的頒獎照無法確認是否拍到本人，故未採用；目前也沒有未戴口罩的正式形象照，歡迎提供補上。</p>
+  </div>
+</section>
+
+<!-- 9 聯絡與連結 -->
+<section id="contact" aria-label="聯絡與連結">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow">CONTACT</p>
+      <h2>聯絡與連結 <span class="thin">／訊號接通的方式</span></h2>
+      <div class="sec-rule"></div>
+    </div>
+    <div class="contact-grid">
+      <figure class="fig rise"><img data-slot="IMG-004" src="images/IMG-004.webp" width="1000" height="562" alt="概念插畫：夜色中山頂的訊號塔與光流" loading="lazy"><figcaption class="figcap"><b>概念插畫</b>：訊號塔與光流——直播訊號，從場館傳向每一支手機。（AI 概念圖，非實拍）</figcaption></figure>
+      <div class="rise">
+        <ul class="clist">
+          <li>
+            <div class="k">學校信箱</div>
+            <div class="v"><a href="mailto:t90102@mail.tut.edu.tw">t90102@mail.tut.edu.tw</a></div>
+          </li>
+          <li>
+            <div class="k">學校師資頁</div>
+            <div class="v"><a href="https://dba.tut.edu.tw/p/403-1091-151.php?Lang=zh-tw" target="_blank" rel="noopener">台南應用科技大學 企管系 兼任師資</a></div>
+            <div class="v" style="margin-top:10px"><a href="https://chain.tut.edu.tw/p/403-1092-1698.php?Lang=zh-tw" target="_blank" rel="noopener">台南應用科技大學 連鎖加盟學程 兼任師資</a></div>
+          </li>
+          <li>
+            <div class="k">南應運動傳播團隊（團隊粉專，非個人帳號）</div>
+            <div class="v"><a href="https://www.facebook.com/p/%E5%8D%97%E6%87%89%E9%81%8B%E5%8B%95%E5%82%B3%E6%92%AD-100076512481526/" target="_blank" rel="noopener">Facebook 粉專：南應運動傳播 TUT SPORT</a></div>
+            <div class="v" style="margin-top:10px"><a href="https://www.instagram.com/tut_sport_net/" target="_blank" rel="noopener">Instagram：@tut_sport_net</a></div>
+            <div class="note">以上為團隊經營的公開頁面，不是林泓丞老師的個人社群帳號。</div>
+          </li>
+        </ul>
+        <p class="contact-note">目前公開管道查無個人電話與個人社群帳號；聯絡請使用學校信箱，或透過學校師資頁確認最新資訊。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 10 固定頁尾 -->
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="https://www.tava-ai.com/" target="_blank" rel="noopener">本網頁由 TAVA AI 製作</a>
+      <a href="https://www.bymyway.com/" target="_blank" rel="noopener">出品人 大樹教練</a>
+      <a href="https://event.bymyway.com/curated/rongtree/" target="_blank" rel="noopener">友善連結 榮樹下</a>
+      <a href="https://event.bymyway.com/curated/skyteam/" target="_blank" rel="noopener">顧問師天團・人才軍火庫</a>
+    </div>
+    <p class="foot-meta">林泓丞個人品牌網頁 · 概念「鏡頭後面的人」 · 頁面照片來自學校與報導公開來源，概念插畫為 AI 生成並已標示 · 內容以查證過的公開資料為準</p>
+  </div>
+</footer>
+
+<!-- 燈箱 -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="照片檢視">
+  <button class="lb-btn" id="lb-close" type="button" aria-label="關閉">✕</button>
+  <button class="lb-btn" id="lb-prev" type="button" aria-label="上一張">‹</button>
+  <button class="lb-btn" id="lb-next" type="button" aria-label="下一張">›</button>
+  <img id="lb-img" src="images/photo-hero.webp" alt="">
+  <p class="lb-cap" id="lb-cap"></p>
+  <p class="lb-count" id="lb-count"></p>
+</div>
+
+<button id="totop" type="button" aria-label="回到頂端">↑</button>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+"use strict";
+var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- ⑭ 圖片淡入 ---------- */
+function markLoaded(img){ img.classList.add('loaded'); }
+document.querySelectorAll('img').forEach(function(img){
+  if (img.complete && img.naturalWidth > 0) { markLoaded(img); }
+  else { img.addEventListener('load', function(){ markLoaded(img); }, {once:true}); }
+});
+
+/* ---------- ⑬ 取景器開場 ---------- */
+var intro = document.getElementById('intro');
+function killIntro(){ if (intro) { intro.remove(); intro = null; } }
+try {
+  if (!reduced && intro && !sessionStorage.getItem('lhc-intro')) {
+    intro.hidden = false;
+    document.getElementById('intro-skip').addEventListener('click', function(){
+      try { sessionStorage.setItem('lhc-intro','1'); } catch(e){}
+      killIntro();
+    });
+    setTimeout(function(){ if (intro) intro.classList.add('flash'); }, 1900);
+    setTimeout(function(){ if (intro) intro.classList.add('leave'); }, 2120);
+    setTimeout(function(){
+      try { sessionStorage.setItem('lhc-intro','1'); } catch(e){}
+      killIntro();
+    }, 2700);
+  } else { killIntro(); }
+} catch(e){ killIntro(); }
+
+/* ---------- ⑪ 文字升起 ---------- */
+var risers = document.querySelectorAll('.rise');
+if ('IntersectionObserver' in window && !reduced) {
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, {threshold: 0});
+  risers.forEach(function(el){ io.observe(el); });
+} else {
+  risers.forEach(function(el){ el.classList.add('in'); });
+}
+
+/* ---------- ③ 數字跳動 ---------- */
+function countUp(el){
+  var target = parseInt(el.getAttribute('data-count'), 10);
+  if (reduced) { el.textContent = target; return; }
+  var start = null, dur = 1300;
+  function step(ts){
+    if (!start) start = ts;
+    var p = Math.min((ts - start) / dur, 1);
+    var eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(target * eased);
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+var counters = document.querySelectorAll('[data-count]');
+if ('IntersectionObserver' in window) {
+  var cio = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) { countUp(en.target); cio.unobserve(en.target); }
+    });
+  }, {threshold: 0.4});
+  counters.forEach(function(el){ cio.observe(el); });
+} else {
+  counters.forEach(countUp);
+}
+
+/* ---------- ④ 亮點雷射卡 ---------- */
+var stage = document.getElementById('laser-stage');
+var svg = document.getElementById('laser-svg');
+var card = document.getElementById('laser-card');
+var cardTitle = document.getElementById('laser-card-title');
+var cardText = document.getElementById('laser-card-text');
+var hotspots = Array.prototype.slice.call(document.querySelectorAll('.hotspot'));
+var activeHot = null;
+function closeLaser(){
+  hotspots.forEach(function(h){ h.setAttribute('aria-expanded','false'); });
+  card.classList.remove('show');
+  svg.innerHTML = '';
+  activeHot = null;
+}
+function drawLine(h){
+  if (window.innerWidth <= 900) { svg.innerHTML = ''; return; }
+  var sr = stage.getBoundingClientRect();
+  var hr = h.getBoundingClientRect();
+  var cr = card.getBoundingClientRect();
+  var x1 = hr.left - sr.left + hr.width / 2;
+  var y1 = hr.top - sr.top + hr.height / 2;
+  var x2 = (cr.left < hr.left) ? (cr.right - sr.left) : (cr.left - sr.left);
+  var y2 = cr.top - sr.top + cr.height / 2;
+  svg.setAttribute('viewBox', '0 0 ' + sr.width + ' ' + sr.height);
+  svg.innerHTML = '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '"/>';
+}
+function openLaser(h){
+  hotspots.forEach(function(x){ x.setAttribute('aria-expanded', x === h ? 'true' : 'false'); });
+  cardTitle.textContent = h.getAttribute('data-title');
+  cardText.textContent = h.getAttribute('data-text');
+  card.classList.add('show');
+  activeHot = h;
+  if (window.innerWidth > 900) {
+    var sr = stage.getBoundingClientRect();
+    var hr = h.getBoundingClientRect();
+    var hx = (hr.left - sr.left) / sr.width;
+    var hy = (hr.top - sr.top) / sr.height;
+    card.style.left = (hx < 0.5) ? 'auto' : '16px';
+    card.style.right = (hx < 0.5) ? '16px' : 'auto';
+    card.style.top = Math.max(12, Math.min(hy * sr.height - 70, sr.height - card.offsetHeight - 12)) + 'px';
+    card.style.bottom = 'auto';
+    drawLine(h);
+  }
+}
+hotspots.forEach(function(h){
+  h.addEventListener('click', function(){
+    if (activeHot === h) { closeLaser(); } else { openLaser(h); }
+  });
+});
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape' && activeHot) closeLaser();
+});
+window.addEventListener('resize', function(){ if (activeHot) openLaser(activeHot); });
+
+/* ---------- ⑯ 篩選記網址 ---------- */
+function hashParams(){
+  try { return new URLSearchParams(location.hash.replace(/^#/, '')); }
+  catch(e){ return new URLSearchParams(); }
+}
+function writeHash(params){
+  var s = params.toString();
+  history.replaceState(null, '', s ? ('#' + s) : location.pathname + location.search);
+}
+function setupFilter(group, itemSelector, emptyId){
+  var bar = document.querySelector('[data-filter-group="' + group + '"]');
+  if (!bar) return;
+  var items = Array.prototype.slice.call(document.querySelectorAll(itemSelector));
+  var counts = {};
+  items.forEach(function(it){
+    var t = it.getAttribute('data-tag');
+    counts[t] = (counts[t] || 0) + 1;
+  });
+  var tags = Object.keys(counts).sort(function(a,b){ return counts[b] - counts[a]; }).slice(0, 12);
+  var shareBtn = bar.querySelector('[data-share]');
+  var allBtn = document.createElement('button');
+  allBtn.type = 'button'; allBtn.className = 'fbtn'; allBtn.setAttribute('data-val','');
+  allBtn.innerHTML = '全部<span class="n">(' + items.length + ')</span>';
+  bar.insertBefore(allBtn, shareBtn);
+  tags.forEach(function(t){
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'fbtn'; b.setAttribute('data-val', t);
+    b.innerHTML = t + '<span class="n">(' + counts[t] + ')</span>';
+    bar.insertBefore(b, shareBtn);
+  });
+  var empty = document.getElementById(emptyId);
+  function apply(val, push){
+    var shown = 0;
+    items.forEach(function(it){
+      var ok = !val || it.getAttribute('data-tag') === val;
+      it.style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    });
+    bar.querySelectorAll('.fbtn').forEach(function(b){
+      b.setAttribute('aria-pressed', b.getAttribute('data-val') === val ? 'true' : 'false');
+    });
+    if (empty) empty.classList.toggle('show', shown === 0);
+    if (push) {
+      var p = hashParams();
+      if (val) { p.set(group, val); } else { p.delete(group); }
+      writeHash(p);
+    }
+    return shown;
+  }
+  bar.querySelectorAll('.fbtn').forEach(function(b){
+    b.addEventListener('click', function(){ apply(b.getAttribute('data-val'), true); });
+  });
+  var initial = hashParams().get(group) || '';
+  if (initial && !counts[initial]) initial = '';
+  apply(initial, false);
+  if (shareBtn) {
+    shareBtn.addEventListener('click', function(){
+      var url = location.href;
+      function done(){ shareBtn.textContent = '已複製！'; setTimeout(function(){ shareBtn.textContent = '複製目前篩選連結'; }, 1800); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done, function(){ fallback(); });
+      } else { fallback(); }
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = url; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch(e){}
+        ta.remove();
+      }
+    });
+  }
+  return { apply: apply, items: items };
+}
+var mediaFilter = setupFilter('media', '#media-grid .media-card, .media-feature', 'media-empty');
+var photoFilter = setupFilter('photo', '#masonry .mitem', 'photo-empty');
+
+/* ---------- 燈箱 ---------- */
+var lb = document.getElementById('lightbox');
+var lbImg = document.getElementById('lb-img');
+var lbCap = document.getElementById('lb-cap');
+var lbCount = document.getElementById('lb-count');
+var lbItems = [];
+var lbIdx = 0;
+var lastFocus = null;
+function visiblePhotoItems(){
+  return Array.prototype.slice.call(document.querySelectorAll('#masonry .mitem'))
+    .filter(function(el){ return el.style.display !== 'none'; });
+}
+function showLb(i){
+  lbItems = visiblePhotoItems();
+  if (!lbItems.length) return;
+  lbIdx = (i + lbItems.length) % lbItems.length;
+  var el = lbItems[lbIdx];
+  lbImg.src = el.getAttribute('data-full');
+  lbImg.alt = el.querySelector('img').alt || '';
+  lbCap.textContent = el.getAttribute('data-cap') || '';
+  lbCount.textContent = (lbIdx + 1) + ' / ' + lbItems.length;
+}
+function openLb(el){
+  lastFocus = document.activeElement;
+  showLb(visiblePhotoItems().indexOf(el));
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('lb-close').focus();
+}
+function closeLb(){
+  lb.classList.remove('open');
+  document.body.style.overflow = '';
+  if (lastFocus && lastFocus.focus) lastFocus.focus();
+}
+document.querySelectorAll('#masonry .mitem').forEach(function(el){
+  el.addEventListener('click', function(){ openLb(el); });
+});
+document.getElementById('lb-close').addEventListener('click', closeLb);
+document.getElementById('lb-prev').addEventListener('click', function(){ showLb(lbIdx - 1); });
+document.getElementById('lb-next').addEventListener('click', function(){ showLb(lbIdx + 1); });
+lb.addEventListener('click', function(e){ if (e.target === lb) closeLb(); });
+document.addEventListener('keydown', function(e){
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLb();
+  if (e.key === 'ArrowLeft') showLb(lbIdx - 1);
+  if (e.key === 'ArrowRight') showLb(lbIdx + 1);
+});
+
+/* ---------- ㉑ 不留孤字（中文：末兩字不斷行） ---------- */
+document.querySelectorAll('.norphan').forEach(function(el){
+  var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null);
+  var last = null, node;
+  while ((node = walker.nextNode())) { if (node.nodeValue.trim()) last = node; }
+  if (!last) return;
+  var txt = last.nodeValue;
+  var m = txt.match(/^(.*?)(\S{2,3}[。！？、，；：」』）】]?)$/);
+  if (!m || m[1].length < 2) return;
+  var keep = m[2];
+  if (keep.length > 4) keep = keep.slice(-3);
+  last.nodeValue = txt.slice(0, txt.length - keep.length);
+  var sp = document.createElement('span');
+  sp.className = 'nowrap';
+  sp.textContent = keep;
+  last.parentNode.insertBefore(sp, last.nextSibling);
+});
+
+/* ---------- 回到頂端 ---------- */
+var totop = document.getElementById('totop');
+window.addEventListener('scroll', function(){
+  totop.classList.toggle('show', window.scrollY > 600);
+}, {passive: true});
+totop.addEventListener('click', function(){ window.scrollTo({top: 0, behavior: reduced ? 'auto' : 'smooth'}); });
+})();
+</script>
+</body>
+</html>
